@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width= device-width, intial-scale=1.0">
+
+        <link rel="stylesheet" href="prototype2.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+        <Title>Ertugral Restaurant</Title>
+
+    </head>
+    
+    <body>
+        <!--======Navigation Area========-->
+        <section class="navSection">
+
+            <header>
+                
+                <div class="logoImage">
+                    <a href="#welcome">
+                        <img src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuLogo.jpg" alt=""><!--Leads to top Content Area-->
+                    </a>
+                </div>
+                
+                <nav class="naviBar">
+                    <ul class="navList">
+
+                        <li class="naviBar-item"><!--The about page-->
+                
+                            <a href="#AboutSect" class="active">About</a>
+                
+                        </li>
+
+                        <li class="naviBar-item"><!--Menu-->
+                            
+                            <a  href="#menu" >Menu</a><!--Add   downloadable pdf of menu maybe (Marketing stategy, wink wink ;-) )-->
+                            
+                        </li>
+
+                        <li class="naviBar-item"><!--Deals & Promo/ Specials-->
+                
+                            <a href="#PromoSect"> Deals & Promotions</a>
+                
+                        </li><!--Lead to login page, for exclusive deals and privelages for registered users-->
+
+                        <li class="naviBar-item"><!--Delivery-->
+                
+                            <a href="#Booking">Booking</a>
+                
+                        </li>
+                        
+                    </ul>
+
+
+                </nav>
+                
+                <div class = "icons">
+                    <i class="fas fa-bars" id="menu-bar"></i>
+                    <i class="fas fa-user" id="LgnBtn"></i>
+                    
+                </div>
+                
+                <form action="ErtuLoginPhP.php" method="post" class="login-form" id="login-form">
+                    
+                    <h3>Sign-In</h3>
+                    <input type="text" id="name" placeholder="enter your name" class="box" name="name">
+                    <input type="email" id="email" placeholder="your email" class="box" name="email">
+                    <input type="password" id="password" placeholder="your password" class="box" name="password">
+                    <input type="submit" value="Sign-In" class="signIn">
+                    <p>No account?</p><a href="#sign-up-form" class="signup-link" id="sign-up-link">Sign up</a>
+                    
+                </form>
+
+                <form action="connect.php" method="post" class="sign-up-form" id="sign-up-form">
+                    
+                    <h3>Sign-Up</h3>
+                    <input type="text" id="name" placeholder="enter your name" class="box" name="name">
+                    <input type="email" id="email" placeholder="your email" class="box" name="email">
+                    <input type="password" id="password" placeholder="your password" class="box" name="password">
+                    <input type="password" id="passwordConfirmation" placeholder="confirm password" class="box" name="passwordConfirmation">
+                    <input type="submit" value="Sign-Up" class="signIn">
+                    <p>Have an account?<a href="#login-form" class="signin-link" id="sign-in-link">Sign-in</a></p>
+                        
+                </form>
+
+                
+    
+            </header>
+
+        </section>  
+        <!--=====Content Area======-->
+
+        <!--Welcome Area -->
+        <section class="welcome" id="welcome">
+            <div class="welContent">
+                <h3>Tastes <span>of</span> Turkey</h3>
+                <p>The Ertugral Restaurant welcomes you to the <span>best Turkish dine in</span> you will experience</p>
+                <a href="#Booking" class="wbkBtn">Book</a>
+            </div>
+        </section>
+
+        
+        <!--About Area-->
+        <section class="AboutSect" id="AboutSect">
+            
+            <div class="aboutHeader">
+                <h2>About Us</h2>
+            </div>
+            <hr>
+            <div class="about-content">
+                <p>The Ertugral Restaurant Aims To Share The Turkish Delicacies With The Community</p>
+            </div>
+
+        </section>
+
+        <!--Menu Area-->
+        <Section class="menu" id="menu">
+
+            <!--Menu images & Menu-->
+            <h1 class="menuHeading">Menu</h1>
+            
+             <div class="box-container">
+                <!--First Part-->
+                <div class="box box1">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu, Soups&Kebabs.jpg" alt="">
+                    <div class="menuContent">
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\adanKebab.jpg" alt="">
+                        <h3 class="menuHeaders">Soups & Kebabs</h3>
+                        <p>Not just for cold occasions, but will warm you everytime</p>
+                    </div>
+                </div>
+                <!--Second Part-->
+                <div class="box box2">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu, refreshments.jpg" alt="">
+                    <div class="menuContent">                        
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\MlkShkPic.jpg" alt="">
+                        <h3>Refreshments</h3>
+                        <p>Quinch your thirst no matter the weather</p>
+                    </div>
+                </div>
+                <!--Third Part-->
+                <div class="box box3">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu,wraps&steak.jpg" alt="">
+                    <div class="menuContent">                        
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\Wraps image.jpg" alt="">
+                        <h3 class="menuHeaders">Wraps & Steak</h3>
+                        <p>Get wrapped up in our delicious meals and steak in for the experience</p>
+                    </div>
+                </div>
+                <!--Fourth Part-->
+                <div class="box box4">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu7.jpg" alt="">
+                    <div class="menuContent">                        
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\DemPrawns.jpg" alt="">
+                        <h3 class="menuHeaders">The All Blue</h3>
+                        <p>Enjoy the flavours of the seven seas with us</p>
+
+                    </div>
+                </div>
+                <!--Fifth Part-->
+                <div class="box box5">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu,refreshments2.jpg" alt="">
+                    <div class="menuContent">                        
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\MocPic.jpg" alt="">
+                        <h3 class="menuHeaders">Moctails</h3>
+                        <p>Drinks can be fun without alchol</p>
+                    </div>
+                </div>
+                <!--Sixth Part-->
+                <div class="box box6">
+                    <img class="menuImage" src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\ErtuMenu,combos&salads.jpg" alt="">
+                    <div class="menuContent">
+                        <img  src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\Combos communicating.jpg" alt="">
+                        <h3 class="menuHeaders">Salad Days</h3>
+                        <p>Salads dress in different ways too</p>                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </Section>
+           
+        
+        <!--Promontional Banner-->
+        <Section class="PromoSect" id="PromoSect">
+
+            <div class="promo-outer">
+                
+                <div class="promo-inner">
+
+                    <!--Items on Promo-->
+                    <div class="promoContainer">
+        
+                        <div class="promoCaption">
+                            <span>This June!!!</span>
+                            <h3>Father's Day special</h3>
+                            <p>Enjoy this father's day, with our amazing breakfast to start their day</p> 
+                        </div>
+                        <div class="promoImage">
+                            <img class ="pImg"src="C:\xampp\htdocs\ErtuCode\Ertu-Assets\Father's Day Special pic2.jpg" alt="">
+                        </div>
+
+                    </div><!--Banner would be changed every new event, simultaneously allowing us to update the website if need be-->
+                    <!--Father's Day special-->
+                </div>
+            </div>
+
+        </Section>    
+        
+        <!--Name, email, Phone, Booking Date & Time(Calender function required), Number of People(A capped number type ranging from 1 to 6 people w/ any number greater than that users are required to contact the restuarant)-->
+        <!--Create a form for booking-->
+        
+        <Section class="Booking" id="Booking">
+        
+            <div class="container-time">
+                <h2 class="headingTop">Time Open</h2>
+                
+                <h3 class="headingDays">Monday-Friday</h3>
+                <p>7am - am (Breakfast)</p>
+                <p>12pm - 10pm (Lunch - Dinner)</p>
+
+                <h3 class="headingDays">Saturday & Sunday</h3>
+                <p>8am - 11am (Breakfast)</p>
+                <p>12pm - 11pm (Lunch - Dinner)</p>
+
+                <hr><!--instead of using bottom border in css-->
+
+                <h4 class="ContactUsHding">Contact us: 063 100 2010</h4>
+            </div>
+            
+            <div class="container-form">
+                
+                <form action="ErtuBookPhP.php" method="post">
+
+                    <h2 class="formHeading"></h2>
+
+                    <div class="form-field">
+                        <p for="">Name:</p>
+                        <input type="text" placeholder="Your Name" required name="name">
+                    </div>
+
+                    <div class="form-field">
+                        <p for="">Email:</p>
+                        <input type="email" placeholder="Your Email" required name="email">
+                    </div>
+
+                    <div class="form-field">
+                        <p for="">Phone:</p>
+                        <input type="tel" placeholder="Your Numbers" required name="phone">
+                    </div>
+
+                    <div class="form-field">
+                        <p for="">Date:</p>
+                        <input type="date" required name="date">
+                    </div>
+
+                    <div class="form-field">
+                        <p for="">Time:</p>
+                        <input type="time" required name="time">
+                    </div>
+
+                    <div class="form-field">
+                        
+                        <p for="">How many people:</p>
+                        <select name="selectOption">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                        </select>
+
+                    </div>
+
+                    <button class="bookingButton">Book Table</button>
+                </form>
+            </div>
+
+        </Section>
+
+
+
+
+
+
+
+
+
+        <!--Footer--><!--T&Cs, Privacy Policy, Contact Us, Social Media div columns-->
+        
+        <footer class="footerSection" id="footerSection">
+            <div class="footerContainer">
+                <div>
+                    <a href="#navSection" class="footerLogo">
+                        Ertugral
+                    </a>
+
+                    <p class="footerDescription">
+                        The Fine Taste of Turkish Cuisines
+                    </p>
+                </div>
+
+                <div class="footerContent">
+                    <div>
+                        <h3 class="footerTitle">
+                            Company
+                        </h3>
+                        <ul class="footerLink">
+                            <li>
+                                <a href="#AboutSect" class="footerLink">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footerLink">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footerLink">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="footerTitle">
+                            Find us
+                        </h3>
+                        <ul class="footerSocials">
+                            <a href="" class="ftSclLink">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="" class="ftSclLink">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="" class="ftSclLink">
+                            |   <i class="ri-twitter-line"></i>
+                            </a>
+                            <a href="" class="ftSclLink">
+                                011-num-numm
+                            </a>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="footerInfocontainer">
+                <span class="footCopyRightTing">
+                    &#169; AnoIncorporated. All rights are wrong
+                </span>
+                
+                <a href="#" class="footerTCs">
+                    Terms & Conditions apply
+                </a>
+            </div>
+            <!---
+            
+                <div>
+                    <h3 class="footerTitle">
+                        Help & Support
+                    </h3>
+                    <ul class="footerLink">
+                        <li>
+                            <a href="#" class="footerLink">Payment</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footerLink">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footerLink">FAQ</a>
+                        </li>
+                    </ul> 
+                </div>
+            -->
+
+        </footer>
+        
+
+        <script src="prototype2.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
